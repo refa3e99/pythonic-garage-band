@@ -1,19 +1,27 @@
+from abc import abstractmethod
+
+
 class Musician:
     instruments = ["guitar", "bass", "drums"]
     solos = ["face melting guitar solo", "bom bom buh bom", "rattle boom crash"]
 
+    @abstractmethod
     def __init__(self, name):
         self.name = name
 
+    @abstractmethod
     def __str__(self):
         pass
 
+    @abstractmethod
     def __repr__(self):
         pass
 
+    @abstractmethod
     def get_instrument(self):
         pass
 
+    @abstractmethod
     def play_solo(self):
         pass
 
